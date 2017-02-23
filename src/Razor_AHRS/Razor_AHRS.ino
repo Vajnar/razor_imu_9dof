@@ -262,7 +262,7 @@ float GYRO_AVERAGE_OFFSET_Z = 0.0;
 // DEBUG OPTIONS
 /*****************************************************************/
 // When set to true, gyro drift correction will not be applied
-#define DEBUG__NO_DRIFT_CORRECTION false
+#define DEBUG__NO_DRIFT_CORRECTION true
 // Print elapsed time after each I/O loop
 #define DEBUG__PRINT_LOOP_TIME false
 
