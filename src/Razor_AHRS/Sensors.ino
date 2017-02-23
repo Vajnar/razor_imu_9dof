@@ -87,7 +87,7 @@ void Magn_Init()
 
   Wire.beginTransmission(MAGN_ADDRESS);
   WIRE_SEND(0x00);
-  WIRE_SEND(0b00011000);  // Set 50Hz
+  WIRE_SEND(0b00111000);  // Set 75Hz, average 2 samples per measurement
   Wire.endTransmission();
   delay(5);
 }
