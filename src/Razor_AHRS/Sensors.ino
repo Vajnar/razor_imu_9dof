@@ -172,7 +172,7 @@ void Gyro_Init()
   // Set clock to PLL with z gyro reference
   Wire.beginTransmission(GYRO_ADDRESS);
   WIRE_SEND(0x3E);
-  WIRE_SEND(0x00);
+  WIRE_SEND(0b00000011);
   Wire.endTransmission();
   delay(5);
 }
